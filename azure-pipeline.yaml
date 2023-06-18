@@ -5,7 +5,7 @@ pool:
 parameters:
   - name: VERSION
     type: string
-    default: '' 
+    default: " " 
 steps:
 - script: |
    whoami
