@@ -11,7 +11,7 @@ steps:
    ls -ltra
   displayName: 'testing' 
 - script: | 
-  mvn versions:set -DnewVersion=18.06.23
+   mvn versions:set -DnewVersion=18.06.23
    mvn install
    cd ./module1/target
    ls -ltra
@@ -19,7 +19,7 @@ steps:
    ls -ltra
    echo maven build completed
   displayName: 'build'
-   
+
 - script: | 
   
    mvn clean
