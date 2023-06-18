@@ -7,13 +7,13 @@ steps:
    whoami
    echo $(Pipeline.Workspace)
    echo $(Build.SourceBranchName)
-   
+   echo $(Build.SourcesDirectory)
    ls -ltra
   displayName: 'testing' 
 - script: | 
   
    mvn install
-   
+   cd ./module1/target
    ls -ltra
    echo maven build completed
    
