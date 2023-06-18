@@ -18,7 +18,8 @@ steps:
    cd $(Build.SourcesDirectory)/module2/target
    ls -ltra
    echo maven build completed
-  displayName: 'build' 
+  displayName: 'build'
+   
 - script: | 
   
    mvn clean
