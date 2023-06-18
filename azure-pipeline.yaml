@@ -15,5 +15,7 @@ steps:
    mvn install
    cd ./module1/target
    ls -ltra
+   cd $(Build.SourcesDirectory)/module2/target
+   ls -ltra
    echo maven build completed
-   
+  displayName: 'build' 
