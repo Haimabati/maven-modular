@@ -14,7 +14,7 @@ steps:
    echo $(Build.SourcesDirectory)
    echo ${{ parameters.VERSION }}
    ls -ltra
-  displayName: 'testing' 
+  displayName: 'First' 
 - script: | 
    mvn versions:set -DnewVersion=${{ parameters.VERSION }}
    mvn package
