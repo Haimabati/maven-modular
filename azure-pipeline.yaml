@@ -21,7 +21,7 @@ steps:
    ls -ltra
    cd ./module1/target
    ls -ltra
-   cd $(Build.SourcesDirectory)/module2/target
+   cd $(Build.SourcesDirectory)/module2/target/surefire-reports
    ls -ltra
    echo maven build completed
   displayName: 'build'
