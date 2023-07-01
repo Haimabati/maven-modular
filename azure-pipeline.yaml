@@ -18,6 +18,7 @@ steps:
 - script: | 
    mvn versions:set -DnewVersion=${{ parameters.VERSION }}
    mvn package
+   ls -ltra
    cd ./module1/target
    ls -ltra
    cd $(Build.SourcesDirectory)/module2/target
