@@ -33,7 +33,6 @@ steps:
    ls -ltra
    echo workspace binary directory
   displayName: 'test'
-
 - script: | 
   cd $(Build.SourcesDirectory)
    mvn clean
