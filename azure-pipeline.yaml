@@ -34,7 +34,7 @@ steps:
    echo workspace binary directory
   displayName: 'test'
 - script: | 
-  cd $(Build.SourcesDirectory)
+   cd $(Build.SourcesDirectory)
    mvn clean
    cd ./module1/
    ls -ltra
