@@ -32,7 +32,6 @@ steps:
    cd $(Pipeline.Workspace)/b
    ls -ltra
    echo workspace binary directory
-   
   displayName: 'test'
 
 - script: | 
