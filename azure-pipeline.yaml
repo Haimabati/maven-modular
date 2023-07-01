@@ -25,9 +25,18 @@ steps:
    ls -ltra
    echo maven build completed
   displayName: 'build'
+- script: | 
+   cd $(Pipeline.Workspace)/a
+   ls -ltra
+   echo workspace artifactory staging directory
+   cd $(Pipeline.Workspace)/b
+   ls -ltra
+   echo workspace binary directory
+   
+  displayName: 'test'
 
 - script: | 
-  
+  cd $(Build.SourcesDirectory)
    mvn clean
    cd ./module1/
    ls -ltra
@@ -35,3 +44,4 @@ steps:
    ls -ltra
    echo maven clean completed
   displayName: 'clean' 
+
